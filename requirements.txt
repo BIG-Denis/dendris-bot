@@ -1,2 +1,6 @@
 vk
 vk-api
+requests~=2.27.1
+bs4~=0.0.1
+beautifulsoup4~=4.8.2
+Pillow~=7.0.0

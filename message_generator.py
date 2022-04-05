@@ -36,7 +36,7 @@ def generate_text() -> str:
 
     generated_message: str = ''
     res_count = (choices([1, 2, 3, 4, 5], weights=(5, 35, 50, 35, 15), k=1))[0]
-    res_texts = [choice(messages) for _ in range(res_count)]
+    res_texts = [choice(messages)[:-1] for _ in range(res_count)]
 
     for text in res_texts:
         cut = (None, None)
@@ -74,4 +74,3 @@ def generate_text() -> str:
         generated_message = generate_text()
 
     return generated_message
-
