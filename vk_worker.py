@@ -61,7 +61,9 @@ with open('res/chance.txt', 'r') as file:
 
 
 vk_session = vk_api.VkApi(token=token, api_version='5.131')
-longpoll = VkBotLongPoll(vk_session, 210242413)
+# id of your vk group below
+vk_id = PLACE HERE VK GROUD ID
+longpoll = VkBotLongPoll(vk_session, vk_id)
 vk = vk_session.get_api()
 upload = vk_api.VkUpload(vk)
 
