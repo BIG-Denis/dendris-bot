@@ -1,1 +1,1 @@
-# DendrisBOT
+# dendris-bot
